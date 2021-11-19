@@ -8,7 +8,7 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, device/samsung/gtexswifi/device.mk)
 
 PRODUCT_DEVICE := gtexswifi
-PRODUCT_NAME := lineage_gtexswifi
+PRODUCT_NAME := dot_gtexswifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T280
 PRODUCT_MANUFACTURER := samsung

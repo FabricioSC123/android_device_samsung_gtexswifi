@@ -49,7 +49,7 @@ If you want the keyboard with the 5th row with numbers add this to roomservice.x
 To build:
 ```sh
 . build/envsetup.sh
-breakfast lineage_gtexswifi-userdebug && make bacon
+breakfast dot_gtexswifi-userdebug && make bacon
 ```
 
 ---
@@ -66,7 +66,7 @@ export WITH_TWRP=true
 ```
 ```sh
 . build/envsetup.sh
-breakfast lineage_gtexswifi-eng && make recoveryimage
+breakfast dot_gtexswifi-eng && make recoveryimage
 ```
 
 TWRP can't be compiled together with the ROM because for the boot.img we have to use uncompressed kernel (Image), and if we use it for the recovery.img the build will fail because the img will result too big, if we compress the recovery ramdisk with lzma the build will be successfull but the recovery won't boot. So just compile it separately (using compressed kernel (zImage)) with the command above, and ignore the recovery.img (lineage-recovery) generated while compiling the ROM.
